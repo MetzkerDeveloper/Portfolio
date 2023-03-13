@@ -3,6 +3,18 @@
     top: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #323232;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#ff0043 ;
+    border-radius: 30px;
+    
+}
 
 /* Fonts
 
@@ -15,6 +27,7 @@ font-family: 'Sacramento', cursive;
 body{
     background-color: #000000;
     font-family: 'Merriweather Sans', sans-serif;
+    color: #fff;
 }
 
 
@@ -179,6 +192,7 @@ h2{
 h3{
     padding-top: 25px;
     font-size: 18px;
+    color: #fff;
 }
 
 p{
@@ -214,4 +228,48 @@ p{
     border-radius:100%;
     border: none;
     box-shadow: 0px 0px 3px 3px #fff;
+}
+
+/* experience */
+
+.experience{
+    background-color: #3232323e;
+}
+.exp{
+  text-align: center;
+  color: #ff0043;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-row p a{
+    text-decoration: none;
+    color: #ff0043;
+    transition: 1s all ease;
+}
+.skill-row p a:hover{
+    text-decoration: none;
+    color: #FFAC41;
+}
+
+.skill-img{
+    width: 40%;
+    float: left;
+    margin-right: 30px;
+}
+.skill-img2{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.js{
+    width: 20%;
+    float: left;
+    margin-right: 30px;
 }
