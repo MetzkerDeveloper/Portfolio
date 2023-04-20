@@ -180,6 +180,8 @@ body{
     height: 300px;
 }
 
+
+
 h4{
     font-size: 20px;
     color: #FF1E56;
@@ -197,7 +199,7 @@ h3{
 
 p{
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .fa-brands .fa-github-square{
