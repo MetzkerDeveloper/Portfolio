@@ -1,9 +1,9 @@
 
 var Typed = new Typed(".multiple-text", {
-    strings:['Developer Front-end', 'Developer No/Low-Code', 'Developer Full Stack'],
+    strings:['PHP', 'Laravel', 'Livewire', 'Javascript', 'Tailwind CSS'],
     typedSpeed: 100,
-    backSpeed: 50,
-    backDelay: 1000,
+    backSpeed: 40,
+    backDelay: 800,
     loop: true
 })
 
