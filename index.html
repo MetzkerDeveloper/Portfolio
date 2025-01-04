@@ -2,117 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wm | Development</title>
-    <!-- Style -->
-    <link rel="stylesheet" href="Css/style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@0;1&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WM | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
+    <style>
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #323232;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color:#3F83F8 ;
+            border-radius: 10px;
+            
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="nav-width">
-                <div class="logo"><a href="#">WM |<span> DEV</span></a></div>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experience">Experiência</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
+<body class="font-sans text-gray-800 bg-gray-100">
+
+<!-- Header -->
+<header class="bg-gray-900 text-white">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <a href="#" class="text-2xl font-bold">WM <span class="text-blue-500">DEV</span></a>
+        <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+            <li><a href="#sobre" class="hover:text-blue-600">Sobre</a></li>
+            <li><a href="#experience" class="hover:text-blue-600">Experiência</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="h-screen bg-gray-800 text-white flex items-center">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Olá, meu nome é</h1>
+        <h2 class="text-3xl md:text-5xl font-bold text-blue-400">Waleriano Metzker</h2>
+        <h3 class="text-2xl md:text-6xl font-bold mt-4 mb-4" >Sou Desenvolvedor full stack</h3>
+        <p class="text-xl md:text-2xl mt-4">Atualmente está é a minha stack: <span class="text-blue-400 multiple-text"></span></p>
+        <br>
+        <a href="https://www.linkedin.com/in/waleriano-magalhães-84b39219b/" 
+            target="_blank"
+                 class="mt-6 px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            Contate-me
+        </a>
+    </div>
+</section>
+
+<!-- Sobre Section -->
+<section id="sobre" class="py-16 bg-gray-100">
+    <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <img src="image/Eu.jpeg" alt="Waleriano" class="rounded-lg shadow-lg">
+        <div>
+            <h2 class="text-4xl font-bold mb-4">Quem sou</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Sou Waleriano Metzker, Desenvolvedor Full Stack. Tenho experiência com Front-end (HTML, CSS,
+                JavaScript e Tailwind Css) e Back-end com PHP juntamente com o Laravel e para deixar a aplicação mais dinâmica
+                 gosto de utilizar o Livewire. Além disso, tenho conhecimento em Docker e Git. Alguns dos meus projetos estão no meu GitHub.
+            </p>
+            <div class="flex space-x-4">
+                <a href="https://github.com/MetzkerDeveloper" target="_blank">
+                    <img src="image/github.png" alt="GitHub" class="h-10 w-10">
+                </a>
+                <a href="https://instagram.com/wm.developer?igshid=ZDdkNTZiNTM=" target="_blank">
+                    <img src="image/instagram.png" alt="Instagram" class="h-10 w-10">
+                </a>
+                <a href="https://www.linkedin.com/in/waleriano-magalhães-84b39219b/" target="_blank">
+                    <img src="image/linkedin.png" alt="LinkedIn" class="h-10 w-10">
+                </a>
             </div>
         </div>
-    </header>
-    <section class="home" id="home">
-    <div class="max-width">
-        <div class="home-content">
-            <div class="text-1">Olá, meu nome é</div>
-            <div class="text-2">Waleriano Metzker</div>
-            <div class="text-3">Eu sou <span class="multiple-text"></span></div>
-            <div class="btn-contrate"> <button class="width-btn">Contrate-me</button> </div>
-        </div>
-        <img class="img" src="image/skills.png" alt="">
     </div>
 </section>
 
-<section class="sobre" id="sobre">
-    <div class="max-width">
-        <div class="sobre-content">
-            <div class="img-sobre"><img class="img-code" src="image/Eu.jpeg" alt=""></div>
-            <div class="text-sobre">
-                <h4>Quem Sou</h4>
-                <h2>Waleriano Metzker </h2>
-                <h3>Developer web full stack</h3>
-                <p>Meu nome é Waleriano Metzker, ou melhor  WM | DEV. 
-                    Atualmente estou estudando Front-end e Back-end.
-                    Desenvolvo interfaces modernas de alta qualidade,
-                    concentrado em performance, animações e responsividade.
-                    Para trabalhar o Front-end utilizo o HTML,CSS e Javascript 
-                    mas estou buscando aprender Angular para melhorar a performance.
-                    Já no Back-end, estou aprendendo e aprimorando os conhecimentos em PHP e Node.Js
-                </p>
-                    <ul class="rede-social">
-                        <li><a href="https://github.com/MetzkerDeveloper"><img src="image/github.png" alt="github" class="img-redes git"></a></li>
-                        <li><a href="https://instagram.com/wm.developer?igshid=ZDdkNTZiNTM="><img src="image/instagram.png" alt="Instagram" class="img-redes insta"></a></li>
-                        <li><a href="https://www.linkedin.com/in/waleriano-magalh%C3%A3es-84b39219b/"><img src="image/linkedin.png" alt="linkedin" class="img-redes linkedin"></a></li>
-                    </ul>
+<!-- Experience Section -->
+<section id="experience" class="py-16 bg-gray-200">
+    <div class="container px-6 py-8 mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Minhas Habilidades</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Skill Card -->
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">PHP</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Laravel</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Livewire</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Tailwind Css</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Docker</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">SQL Server</h3>
+                </div>
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <img src="image/skills.png" alt="Design" class="h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">MySQL</h3>
+                </div>
+            <!-- End Skill Card -->
 
-            </div>
         </div>
     </div>
 </section>
-<br>
-<section class="experience" id="experience">
-    <div class="skills">
-        <h2 class="exp">My Skills.</h2>
-        <div class="skill-row">
-          <img class="skill-img" src="image/design.png" alt="design-web">
-          <h3>Design & Development.</h3>
-          <p>Fiz minha transcrição de carreira para o desenvolvimento web e atualmente os meus projetos estão no<a href="https://github.com/MetzkerDeveloper?tab=repositories"> GitHub.</a></p>
-        </div>
-        <div class="skill-row">
-          <img class="skill-img2" src="image/appsheet.png" alt="appsheet">
-          <h3>Ferrmantas No Code e Low Code</h3>
-          <p>Sou desenvolvedor Appsheet, é uma ferramenta No/Low-Code da Google onde é possível criar aplicações através de planilhas.
-              Tenho aplicações de Controle de Estoque, Vendas e também de Visitas.</p>
-        </div>
-      </div>
-      <div class="skill-row">
-        <img class="skill-img js" src="image/js.png" alt="js">
-        <h3>Javascript</h3>
-        <p>Tenho um projeto de uma calculadora você pode acessar clicando<a href="https://metzkerdeveloper.github.io/Calculadora/"> aqui.</a><br>
-            Sempre estarei publicando mais projetos para mostrar a evolução de meu aprendizado.
-        </p>
-      </div>
-      <div class="skill-row">
-        <img class="skill-img2" src="image/php.png" alt="php">
-        <h3>PHP</h3>
-        <p>Sou novo nesta linguagem de programação, mas estou buscando aprimorar minhas habilidades com ela.
-            Meu primero projeto foi um <abbr title="Create, Read, Update, Delete">CRUD</abbr> utilizando PHP + Bootstrap.
-            O código também está disponível no <a href="https://github.com/MetzkerDeveloper?tab=repositories"> GitHub.</a>
-        </p>
-      </div>
-    </div>
 
-</section>  
-<section id="projects">
-    <video width="100%" height="240" controls="constrols" loop autoplay="autoplay">
-        <source src="/image/underConstruction.mp4" type="video/mp4">
-        <object data="" width="320" height="240">
-        <embed width="320" height="240" src="/image/underConstruction.mp4">
-        </object>
-        </video>
-</section>
-<br>
-<br>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="script.js"></script>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p>© 2025 Waleriano Metzker. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
